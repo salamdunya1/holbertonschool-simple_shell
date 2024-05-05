@@ -7,11 +7,12 @@
  *
  * This function sets each element in the array `arr` to zero.
  */
+
 void set_zeros(unsigned int *arr, size_t size) {
     if (arr == NULL) {
         return;  
     }
-    int i;
+    size_t i;
     for (i = 0; i < size; i++) {
         arr[i] = 0;  
     }
