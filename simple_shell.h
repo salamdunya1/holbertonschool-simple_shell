@@ -14,13 +14,6 @@
 
 extern char **environ;
 
-char **get_argument(char *line);
-char *get_path(char *line);
-void free_args(char **array_command);
-void execute_command(char **array_command, int nbr_command);
-char *_getenv(const char *name);
-
-
 int _execute(char *arguments, struct stat *statbuf, char **envp);
 bool check_file_status(char *pathname, struct stat *statbuf);
 void handle_error(pid_t pid);
