@@ -11,8 +11,8 @@ void set_zeros(unsigned int *arr, size_t size) {
     if (arr == NULL) {
         return;  
     }
-
-    for (int i = 0; i < size; i++) {
+    int i;
+    for (i = 0; i < size; i++) {
         arr[i] = 0;  
     }
 }
