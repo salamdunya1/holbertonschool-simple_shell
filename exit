@@ -1,5 +1,9 @@
 #include "simple_shell.h"
 #include <stdlib.h>
+#include <stdio.h> 
+#include <string.h> 
+
+#define BUFFER_SIZE 1024
 
 /**
  * builtin_exit - Exit the shell
@@ -19,13 +23,28 @@ int builtin_exit(void)
  */
 int main(int argc, char **argv, char **envp)
 {
-    
-    if (strcmp(command, "exit") == 0)
-    {
-        builtin_exit();
-    }
+    char buffer[BUFFER_SIZE];
+    char *token;
 
-    
+    // Your shell implementation code here
+    while (1)
+    {
+        printf("(command) ");
+        fgets(buffer, BUFFER_SIZE, stdin);
+        token = strtok(buffer, " \n");
+        if (token != NULL)
+        {
+            if (strcmp(token, "exit") == 0)
+            {
+                builtin_exit();
+            }
+            else
+            {
+                // Handle other commands
+                printf("Command not implemented yet\n");
+            }
+        }
+    }
 
     return 0;
 }
