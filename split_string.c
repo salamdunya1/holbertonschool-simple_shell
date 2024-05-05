@@ -1,5 +1,5 @@
 #include  "simple_shell.h"
-
+#define MAX_WORD_COUNT 1024
 /**
  * split_string - split a string into words specified by a delimiter(s),
  *                string the pointer to each word (null-terminated)
