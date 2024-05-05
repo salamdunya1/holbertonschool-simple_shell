@@ -26,6 +26,10 @@ bool check_file_status(char *pathname, struct stat *statbuf);
 void handle_error(pid_t pid);
 
 char **split_string(const char *str, const char *delim, int *argc);
+
+unsigned int count_words(const char *str, const char *delimiters, unsigned int *word_sizes);
+bool is_delimiter(char c, const char *delimiters);
+void set_zeros(unsigned int *arr, size_t size);
 void free_vector(char **vector, int size);
 
 #endif
