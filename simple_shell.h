@@ -25,7 +25,8 @@ int _execute(char *arguments, struct stat *statbuf, char **envp);
 bool check_file_status(char *pathname, struct stat *statbuf);
 void handle_error(pid_t pid);
 
-char **split_string(const char *str, const char *delim, int *argc);
+char **split_string(char *str, const char *separators, int *word_count);
+
 
 unsigned int count_words(const char *str, const char *delimiters, unsigned int *word_sizes);
 bool is_delimiter(char c, const char *delimiters);
