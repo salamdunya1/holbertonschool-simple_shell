@@ -18,7 +18,7 @@ char **split_string(char *str, char *separators, int *word_count)
     unsigned int no_of_words;
     unsigned int word_sizes[MAX_WORD_COUNT];
 
-    set_zeros[word_sizes, MAX_WORD_COUNT];
+    set_zeros(word_sizes, MAX_WORD_COUNT);
     no_of_words = count_words(str, separators, word_sizes);
 
     if(no_of_words == 0)
