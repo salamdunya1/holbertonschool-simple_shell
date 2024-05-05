@@ -28,7 +28,7 @@ void handle_error(pid_t pid);
 char **split_string(char *str, const char *separators, int *word_count);
 
 
-unsigned int count_words(const char *str, const char *delimiters, unsigned int *word_sizes);
+unsigned int count_words(const char *str, char *delimiters, unsigned int *word_sizes);
 bool is_delimiter(char c, const char *delimiters);
 void set_zeros(unsigned int *arr, size_t size);
 void free_vector(char **vector, int size);
