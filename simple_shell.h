@@ -109,16 +109,4 @@ int is_path_form(sh_t *data);
 void is_short_form(sh_t *data);
 int is_builtin(sh_t *data);
 
-int _execute(char *arguments, struct stat *statbuf, char **envp);
-bool check_file_status(char *pathname, struct stat *statbuf);
-void handle_error(pid_t pid);
-
-char **split_string(char *str, char *separators, int *word_count);
-
-
-unsigned int count_words(const char *str, const char *delimiters, unsigned int *word_sizes);
-bool is_delimiter(char c, const char *delimiters);
-void set_zeros(unsigned int *arr, size_t size);
-void free_vector(char **vector, int size);
-
 #endif
