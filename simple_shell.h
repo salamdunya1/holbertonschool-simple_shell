@@ -10,6 +10,7 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <sys/stat.h>
+#include <stdbool.h>
 
 extern char **environ;
 
@@ -18,5 +19,13 @@ char *get_path(char *line);
 void free_args(char **array_command);
 void execute_command(char **array_command, int nbr_command);
 char *_getenv(const char *name);
+
+
+int _execute(char *arguments, struct stat *statbuf, char **envp);
+bool check_file_status(char *pathname, struct stat *statbuf);
+void handle_error(pid_t pid);
+
+char **split_string(const char *str, const char *delim, int *argc);
+void free_vector(char **vector, int size);
 
 #endif
