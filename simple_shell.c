@@ -12,7 +12,7 @@
  * Return: Always 0.
 */
 
-int main(__attribute__((unused)) int argc, char *argv[], char **env)
+int main(__attribute__((unused)) int argc, __attribute__((unused)) char *argv[], char **env)
 {
     char *buff = NULL, *prompt = "$ ";
 	size_t buff_size = 0;
@@ -66,7 +66,6 @@ int _execute(char *arguments, struct stat *statbuf, char **envp)
 {
 	int argc;
 	char **argv;
-	// char *exe;
 
 	argv = split_string(arguments, " ", &argc);
 
