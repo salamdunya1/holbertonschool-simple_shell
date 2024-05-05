@@ -1,51 +1,5 @@
-#include "simple_shell.h"
-#include <stdlib.h>
-#include <stdio.h> 
-#include <string.h> 
+exit: exit [n]
+    Exit the shell.
 
-#define BUFFER_SIZE 1024
-
-/**
- * builtin_exit - Exit the shell
- * Return: Always returns 0, to indicate the shell should exit.
- */
-int builtin_exit(void)
-{
-    exit(0);
-}
-
-/**
- * main - Main function of the shell
- * @argc: Number of arguments
- * @argv: Array of arguments
- * @envp: Array of environment variables
- * Return: 0 on success
- */
-int main(int argc, char **argv, char **envp)
-{
-    char buffer[BUFFER_SIZE];
-    char *token;
-
-    // Your shell implementation code here
-    while (1)
-    {
-        printf("(command) ");
-        fgets(buffer, BUFFER_SIZE, stdin);
-        token = strtok(buffer, " \n");
-        if (token != NULL)
-        {
-            if (strcmp(token, "exit") == 0)
-            {
-                builtin_exit();
-            }
-            else
-            {
-                // Handle other commands
-                printf("Command not implemented yet\n");
-            }
-        }
-    }
-
-    return 0;
-}
-
+    Exits the shell with a status of N.  If N is omitted, the exit status
+    is that of the last command executed.
