@@ -110,7 +110,6 @@ int split_line(sh_t *data)
 
 	if (_strcmp(data->line, "\n") == 0)
 		return (FAIL);
-
 	data->args = malloc(size * sizeof(char *));
 	if (data->args == NULL)
 		return (FAIL);
@@ -129,7 +128,7 @@ int split_line(sh_t *data)
 					new_size * sizeof(char *));
 			if (data->args == NULL)
 				return (FAIL);
-				
+
 			size = new_size;
 		}
 		token = strtok(NULL, DELIMITER);
