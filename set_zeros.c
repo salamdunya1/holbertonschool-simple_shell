@@ -11,7 +11,7 @@
 void set_zeros(unsigned int *arr, size_t size) {
     size_t i;
 
-    
+
     if (arr == NULL) {
         return;  
     }

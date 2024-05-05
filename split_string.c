@@ -11,7 +11,7 @@
 
 char **split_string(char *str, char *separators, int *word_count)
 {
-    int c, v;
+    unsigned int c, v;
     char **words;
     char *str_ptr = str;
     unsigned int no_of_words;
