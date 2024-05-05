@@ -183,4 +183,5 @@ int process_cmd(sh_t *data)
 		waitpid(pid, &status, WUNTRACED);
 	}
 	return (0);
+	
 }
