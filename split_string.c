@@ -32,21 +32,19 @@ char **split_string(char *str, char *separators, int *word_count)
         words[v] = malloc((sizeof(char) * word_sizes[v]) + 1);
         if (!words[v])
         {
-            for (v--; v >= 0; v--)
-                free(words[v]);
+           for (int j = v - 1; j >= 0; j--) 
+                free(words[j]);
             free(words);
             return (NULL);
             
         }
 
-        for (c = 0; c < word_sizes[v]; c++, str_ptr++)
-        {
-            while (is_delimiter(*str_ptr, separators))
-                str_ptr++;
-
-            words[v][c] = *str_ptr;    
-            
-        };
+        c = 0; 
+        while (c < word_sizes[v] && !is_delimiter(*str_ptr, separators)) {
+            words[v][c] = *str_ptr;
+            str_ptr++;
+            c++;
+        }
 
 
          words[v][c] = '\0'; 
