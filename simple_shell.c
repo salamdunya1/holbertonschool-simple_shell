@@ -4,11 +4,9 @@
 
 /**
  * main - super simple shell program that runs shell command
- * 
  * When this program is compiled and executed, creates a to process
  * and runs the getline system call and reads the input from stdio.
  * This input should be the path to an executable.
- * 
  * Return: Always 0.
 */
 
@@ -112,12 +110,15 @@ int split_line(sh_t *data)
 
 	if (_strcmp(data->line, "\n") == 0)
 		return (FAIL);
+
 	data->args = malloc(size * sizeof(char *));
 	if (data->args == NULL)
 		return (FAIL);
+
 	token = strtok(data->line, DELIMITER);
 	if (token == NULL)
 		return (FAIL);
+
 	while (token)
 	{
 		data->args[i++] =  token;
@@ -128,6 +129,7 @@ int split_line(sh_t *data)
 					new_size * sizeof(char *));
 			if (data->args == NULL)
 				return (FAIL);
+				
 			size = new_size;
 		}
 		token = strtok(NULL, DELIMITER);
@@ -183,5 +185,4 @@ int process_cmd(sh_t *data)
 		waitpid(pid, &status, WUNTRACED);
 	}
 	return (0);
-	
 }
