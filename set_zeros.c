@@ -13,7 +13,10 @@ void set_zeros(unsigned int *arr, size_t size) {
         return;  
     }
     size_t i;
-    for (i = 0; i < size; i++) {
+    i = 0;
+
+   while(i < size) {
         arr[i] = 0;  
+        i++;
     }
 }
