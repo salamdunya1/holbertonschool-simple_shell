@@ -3,7 +3,7 @@
 #define SETOWD(V) (V = _strdup(_getenv("OLDPWD")))
 /**
  * change_dir - changes directory.
- * @data: a pointer to the data structure
+ * @data: a pointer to the data structure.
  *
  * Return: (Success) 0 is returned
  * ------- (Fail) negative number will returned
