@@ -3,7 +3,7 @@
 /**
  * _strcat - concatenates two string in a path form.
  * @first: the first given destination.
- * @second: the second given source
+ * @second: the second given source.
  *
  * Return: (Success) to the newly string
  * ------- (Fail) if it failed
