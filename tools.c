@@ -1,6 +1,6 @@
 #include "simple_shell.h"
 /**
- * _getenv - gets the path
+ * _getenv - gets the path.
  * @path_name: a pointer to the struct of data
  *
  * Return: (Success) a positive number
