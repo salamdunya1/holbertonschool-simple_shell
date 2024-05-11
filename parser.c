@@ -4,7 +4,7 @@
  * @data: the data strucct pointer.
  *
  * Return: (Success)
- * ------- (Fail) otherwise
+ * ------- (Fail) otherwise.
  */
 int is_path_form(sh_t *data)
 {
