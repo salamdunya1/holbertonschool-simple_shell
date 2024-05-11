@@ -2,7 +2,7 @@
 
 /**
  * _itoa - convert integer to array.
- * @n: the given number
+ * @n: the given number.
  *
  * Return: a pointer to the null terminated string
  */
