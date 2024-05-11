@@ -26,7 +26,7 @@ extern char **environ;
 #define NEUTRAL (0)
 
 /**
- * struct sh_data - Global data structure
+ * struct sh_data - Global data structure.
  * @line: the line input
  * @args: the arguments token
  * @error_msg: the global path
