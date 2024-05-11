@@ -7,7 +7,7 @@
  * When this program is compiled and executed, creates a to process.
  * and runs the getline system call and reads the input from stdio.
  * This input should be the path to an executable.
- * Return: Always 0.
+ * Return: Always 0
 */
 
 int main(void)
