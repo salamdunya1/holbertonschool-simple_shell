@@ -1,7 +1,7 @@
 #include "simple_shell.h"
 /**
  * _strcpy - copie a string from source to destination
- * @source: the string source
+ * @source: the string source.
  * @dest: the string destination
  *
  * Return: the pointer to dest
