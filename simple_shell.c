@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * main - super simple shell program that runs shell command
+ * main - super simple shell program that runs shell command.
  * When this program is compiled and executed, creates a to process
  * and runs the getline system call and reads the input from stdio.
  * This input should be the path to an executable.
