@@ -1,7 +1,7 @@
 #include "simple_shell.h"
 
 /**
- * _strcat - concatenates two string in a path form
+ * _strcat - concatenates two string in a path form.
  * @first: the first given destination
  * @second: the second given source
  *
