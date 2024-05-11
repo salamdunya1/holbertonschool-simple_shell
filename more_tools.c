@@ -1,7 +1,7 @@
 #include "simple_shell.h"
 
 /**
- * _itoa - convert integer to array
+ * _itoa - convert integer to array.
  * @n: the given number
  *
  * Return: a pointer to the null terminated string
